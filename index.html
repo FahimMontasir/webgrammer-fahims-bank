@@ -1,11 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>webgrammer fahim</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <!-- login area -->
+    <div id="login-area">
+        <h1 class="text-center">Welcome to webgrammer's bank</h1>
+        <div class="submit-area">
+            <h4>Login</h4>
+            <input class="form-control" type="text" placeholder="Enter your email">
+            <br>
+            <input class="form-control" type="password" placeholder="password">
+            <br>
+            <button id="login" class="btn btn-success">Enter</button>
+        </div>
+    </div>
+    <!-- transaction area -->
+    <div id="transaction-area">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="status Deposit">
+                    <h6>Deposit</h5>
+                        <h2>$00</h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="status Withdraw">
+                    <h6>Withdraw</h5>
+                        <h2>$00</h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="status Balance">
+                    <h6>Balance</h5>
+                        <h2>$1340</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="submit-area">
+                    <h4>Deposit</h4>
+                    <input class="form-control" type="number" placeholder="$ amount you want to deposit">
+                    <br>
+                    <button class="btn btn-success">Deposit</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="submit-area">
+                    <h4>Withdraw</h4>
+                    <input class="form-control" type="number" placeholder="$ amount you want to withdraw">
+                    <br>
+                    <button class="btn btn-success">Withdraw</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="action.js"></script>
 </body>
+
 </html>
